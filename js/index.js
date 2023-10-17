@@ -1,3 +1,12 @@
+var showRevival=false;
+
 $(".highlight").on("click", function() {
-    $(".overlay").show();
+    showRevival=!showRevival
+    if(showRevival === true) {
+        $(".overlay").show()
+    } else {
+        $(".overlay").hide()
+    }
 })
+
+
