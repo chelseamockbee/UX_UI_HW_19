@@ -1,0 +1,262 @@
+body {
+    background-color: #dacbbc;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.logo {
+    padding-right: 20%;
+    padding: 1%;
+}
+
+nav {
+    background-color: #002D5C;
+    align-items: center;
+}
+
+.heroImgContainer {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.heading {
+    margin-top: -8%;
+    position: absolute;
+    width: 100%;
+}
+
+#quote {
+    font-family: 'Fjalla One';
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 400;
+}
+
+#subheading {
+    margin-top: -3%;
+    font-size: x-large;
+}
+
+.pickupDelivery {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+#pickup {
+    margin-top: -1%;
+    display: flex;
+    font-family: 'Fjalla One';
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 400;
+    color:#002D5C;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px yellow;
+}
+
+#delivery {
+    margin-top: -1%;
+    display: flex;
+    font-family: 'Fjalla One';
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 400;
+    color:#002D5C;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px yellow;
+}
+
+.heroImg {
+    padding-bottom: 2%;
+    filter: brightness(40%);
+}
+
+
+#number {
+    font-family: 'Righteous', sans-serif;
+    font-size: large;
+}
+
+#menu {
+    text-decoration: underline;
+    font-size: large;
+}
+
+.gridContainer {
+    display: grid;
+    justify-items: center;
+    column-gap: 5%;
+    grid-template-rows: 1fr .5fr .5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "clockIcon mapIcon"
+    "hours area"
+    "happyHour address"
+}
+
+#clockIcon {
+    grid-area: clockIcon
+}
+
+#mapIcon {
+    grid-area: mapIcon
+}
+
+#hours {
+    grid-area: hours;
+    color:#002D5C; 
+}
+
+#area {
+    grid-area: area;
+    color:#002D5C;
+}
+
+#happyHour {
+    grid-area: happyHour;
+    color:#D90429;
+}
+
+#address {
+    grid-area: address;
+    color:#0C6BA6;
+    text-decoration: underline;
+}
+
+.gridItem {
+    display: grid;
+    place-items: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+}
+
+.featured {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featuredFavorites {
+    position: absolute;
+    font-family: 'Fjalla One';
+    font-size: large;
+    color:#002D5C;
+    background-color: white;
+    border-radius: 4px;
+    padding: 7px;
+    box-shadow: 1px 1px 1px 1px #D90429;
+}
+
+.favoritePics {
+    display: grid;
+    justify-items: center;
+    column-gap: 5%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "oysters friedChicken drink"
+}
+
+#oysters {
+    grid-area: oysters;
+    border: 2px solid #002D5C;
+    border-radius: 10%;
+}
+
+#friedChicken {
+    grid-area: friedChicken;
+    border: 2px solid #002D5C;
+    border-radius: 10%;
+}
+
+#drink {
+    grid-area: drink;
+    border: 2px solid #002D5C;
+    border-radius: 10%;
+}
+
+.swipe {
+    float: left;
+}
+.preFooter {
+    text-align: center;
+}
+
+.socialMediaText {
+    font-family: 'Righteous', sans-serif;
+    color:#002D5C;
+    font-size: 1em;
+}
+
+.socialMedia {
+    height: 50px;
+}
+
+.trademark {
+    font-family: 'Righteous', sans-serif;
+    color: gray;
+    font-size: 1em;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0C6BA6;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Righteous', sans-serif;
+    font-size: 1em;
+}
+
+.Contact {
+    background-color: #D90429;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .heroImgContainer {
+        flex-direction: column;
+    }
+    .heroImg {
+        width: 100%;
+    }
+    .heading {
+        width: 100%;
+    }
+    #number {
+        display: none;
+    }
+    #menu {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+}
