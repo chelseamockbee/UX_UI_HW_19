@@ -22,6 +22,34 @@ nav {
     align-items: center;
 }
 
+.highlight:hover {
+    text-shadow: #FF0202 0 5px 3.5px;
+}
+
+.overlay {
+    position: fixed;
+    visibility: hidden;
+    width: 180px;
+    background-color: #002D5C;
+    color: white;
+    font-family: "Righteous", sans-serif;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 30px 55px 30px 15px;
+    margin: 0 0 0 1155px;
+    z-index: 4;
+    
+}
+
+.overlay:hover {
+    text-shadow: #FF0202 0 4px 3.5px;
+}
+
+#line-break {
+    margin: 0 auto;
+    width: 300px;
+}
+
 .heroImgContainer {
     display: flex;
     position: relative;
@@ -202,6 +230,7 @@ nav {
 .swipe {
     float: left;
 }
+
 .preFooter {
     text-align: center;
 }
