@@ -12,6 +12,10 @@ body {
     cursor: pointer;
 }
 
+.navBar {
+    position: relative;
+}
+
 .logo {
     padding-right: 20%;
     padding: 1%;
@@ -28,7 +32,6 @@ nav {
 
 .overlay {
     display: none;
-    position: fixed;
     width: 180px;
     background-color: #002D5C;
     color: white;
@@ -36,8 +39,9 @@ nav {
     font-size: 1.5em;
     cursor: pointer;
     padding: 30px 55px 30px 15px;
-    margin: 0 0 0 1155px;
-    z-index: 4;
+    position: absolute;
+    margin-left: 60%;
+    z-index: 2;
 }
 
 .overlay:hover {
@@ -294,6 +298,20 @@ nav {
 }
 
 
+@media (max-width: 1300px) {
+    .overlay {
+        margin-left: 57%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .overlay {
+        margin-left: 52%;
+        padding: 0;
+    }
+}
+
 @media (max-width: 600px) {
     .heroImgContainer {
         flex-direction: column;
@@ -326,5 +344,9 @@ nav {
     }
     .reviewImg {
         width: 50%;
+    }
+    .overlay {
+        padding: 0;
+        margin-left: 52%;
     }
 }
